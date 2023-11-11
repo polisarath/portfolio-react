@@ -33,9 +33,9 @@ function App() {
       <div className='md:row-start-1 flex flex-col items-center max-w-lg'>
       <span className='text-2xl lg:text-3xl xl:text-4xl text-blue-500 font-medium mb-5'>Sarath Lal Shaji</span>
       <h1 className='text-xl lg:text-2xl xl:text-2xl text-center text-mono italic '>I am a full stack developer, I have experience in building web applications using react and nodejs.</h1>
-     </div>
-      </section>
-      <section className='px-4 py-10 flex flex-row justify-center '>
+     
+    
+      <section className='px-4 py-10 flex flex-row justify-start '>
         <ul className='grid grid-cols-2 gap-6 md:grid-cols-4 w-full max-w-lg  '>
           <li  className='flex flex-col justify-center items-center border border-black-800 aspect-square'>
             <img className='w-20 opacity-90' src="/img/mongo.png" alt='mongo'/>
@@ -58,7 +58,9 @@ function App() {
           </li>
         </ul>
       </section>
-
+      
+      </div>
+      </section>
     </main>
     </>
   );
