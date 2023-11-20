@@ -10,7 +10,7 @@ function App() {
    <>
 <div className={`fixed left-0 top-0 z-50 w-full h-full bg-white ${NavDrawerOpen? '':'translate-x-full'} transition-all duration-300 ease-in-out`}>
    <button className=' fixed top-4 right-4' onClick={()=>{setNavDrawerOpen(false)}}>
-    <img className='w-6 h-6' src='./img/close.png' alt="logo"/>
+    <img className='w-6 h-6' src='../img/close.png' alt="logo"/>
      </button>
      <nav className=' h-full w-full flex flex-col items-center justify-center'>
       <ul className='flex flex-col gap-8 items-center '>
