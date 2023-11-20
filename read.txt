@@ -1,0 +1,103 @@
+import logo from '.logo.svg';
+import '.App.css';
+import { useState } from 'react';
+
+function App() {
+  const [NavDrawerOpen, setNavDrawerOpen] = useState(false);
+
+  const handleMenuClick = () = {
+    console.log('Menu button clicked');
+    setNavDrawerOpen(!NavDrawerOpen);
+  };
+
+  const handleCloseClick = () = {
+    console.log('Close button clicked');
+    setNavDrawerOpen(false);
+  };
+
+  console.log('NavDrawerOpen', NavDrawerOpen);
+
+  return (
+    
+      div className={`fixed left-0 top-0 z-50 w-full h-full bg-white ${NavDrawerOpen  ''  'translate-x-full'} transition-all duration-300 ease-in-out`}
+        button className='fixed top-4 right-4' onClick={handleCloseClick}
+          img className='w-6 h-6' src='imgclose.png' alt=logo 
+        button
+        nav className='h-full w-full flex flex-col items-center justify-center'
+          ul className='flex flex-col gap-8 items-center '
+            li
+              a href=#Homea
+            li
+            li
+              a href=#About mea
+            li
+            li
+              a href=#portfolioa
+            li
+            li
+              a href=#Contact Usa
+            li
+          ul
+        nav
+      div
+
+      header className='flex flex-row justify-center items-center h-20 p-4 shadow-2xl'
+        div className='container flex flex-row justify-between items-center text-xl text-slate-900'
+          span className='text-xl font-bold antialiased'Sarath lal shajispan
+          nav className='hidden lgblock'
+            ul className='flex flex-row gap-6 '
+              li
+                a href=#Homea
+              li
+              li
+                a href=#About mea
+              li
+              li
+                a href=#portfolioa
+              li
+              li
+                a href=#Contact Usa
+              li
+            ul
+          nav
+          button className='mdhidden' onClick={handleMenuClick}
+            img className='w-6 h-6' src=imgmenu.png alt='menu' 
+          button
+        div
+      header
+
+      main className='py-10'
+        section className='grid gap-6 px-8 items-center mdgrid-cols-2 container mx-auto '
+          img className='mdrow-start-1 mdcol-start-2 w-full object-center object-cover aspect-square ' src='imgsarath2.jpg' alt='profile' 
+          div className='mdrow-start-1 flex flex-col items-center max-w-lg'
+            span className='text-2xl lgtext-3xl xltext-4xl text-blue-500 font-medium mb-5'Sarath Lal Shajispan
+            h1 className='text-xl lgtext-2xl xltext-2xl text-center text-mono italic 'I am a full stack developer, I have experience in building web applications using react and nodejs.h1
+
+            section className='px-4 py-10 flex flex-row justify-start '
+              ul className='grid grid-cols-2 gap-6 mdgrid-cols-4 w-full max-w-lg  '
+                li className='flex flex-col justify-center items-center border border-black-800 aspect-square'
+                  img className='w-20 opacity-90' src=imgmongo.png alt='mongo' 
+                  h3 className='font-semibold mt-2'MongoDBh3
+                li
+                li className='flex flex-col justify-center items-center border border-black-800 aspect-square'
+                  img className='w-20 opacity-90' src=imgreact.png alt='mongo' 
+                  h3 className='font-semibold mt-2'React JSh3
+                li
+                li className='flex flex-col justify-center items-center border border-black-800 aspect-square'
+                  img className='w-20 opacity-90' src=imgexpress.png alt='mongo' 
+                  h3 className='font-semibold mt-2'Express JSh3
+                li
+                li className='flex flex-col justify-center items-center border border-black-800 aspect-square'
+                  img className='w-20 opacity-90' src=imgnode.png alt='mongo' 
+                  h3 className='font-semibold mt-2'Node Jsh3
+                li
+              ul
+            section
+          div
+        section
+      main
+    
+  );
+}
+
+export default App;
