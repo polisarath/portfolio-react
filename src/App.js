@@ -10,7 +10,7 @@ function App() {
    <>
 <div className={`fixed left-0 top-0 z-50 w-full h-full bg-white ${NavDrawerOpen? '':'translate-x-full'} transition-all duration-300 ease-in-out`}>
    <button className=' fixed top-4 right-4' onClick={()=>{setNavDrawerOpen(false)}}>
-    <img className='w-6 h-6' src='../img/close.png' alt="logo"/>
+    <img className='w-6 h-6' src='./public/img/close.png' alt="logo"/>
      </button>
      <nav className=' h-full w-full flex flex-col items-center justify-center'>
       <ul className='flex flex-col gap-8 items-center '>
@@ -51,7 +51,7 @@ function App() {
       </ul>
     </nav>
   <button className='lg:hidden'  onClick={()=>{setNavDrawerOpen(true)}}>
-  <img className='w-6 h-6' src="./img/menu.png" alt='menu' />
+  <img className='w-6 h-6' src="./public/img/menu.png" alt='menu' />
 </button>
 
    
@@ -59,7 +59,7 @@ function App() {
     </header>
     <main className='py-10'>
       <section className='grid gap-6 px-8 items-center md:grid-cols-2 container mx-auto '>
-      <img className='md:row-start-1 md:col-start-2  w-full object-center object-cover aspect-square ' src='./img/sarath2.jpg' alt='profile'/>
+      <img className='md:row-start-1 md:col-start-2  w-full object-center object-cover aspect-square ' src='./public/img/sarath2.jpg' alt='profile'/>
       <div className='md:row-start-1 flex flex-col items-center max-w-lg'>
       <span className='text-2xl lg:text-3xl xl:text-4xl text-blue-500 font-medium mb-5'>Sarath Lal Shaji</span>
       <h1>Mastering the Art of Web Development</h1>
@@ -68,7 +68,7 @@ function App() {
       <section className='px-4 py-10 flex flex-row justify-start '>
         <ul className='grid grid-cols-2 gap-8 md:grid-cols-4 w-full max-w-lg  '>
           <li  className='flex flex-col justify-center items-center border border-black-800 aspect-square'>
-            <img className='w-20 opacity-90' src="./img/mongo.png" alt='mongo'/>
+            <img className='w-20 opacity-90' src="./public/img/mongo.png" alt='mongo'/>
             <h3 className='font-semibold mt-2'>MongoDB</h3>
           
           </li>
